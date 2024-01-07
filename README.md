@@ -47,11 +47,11 @@ We're excited about the upcoming features that will shape the future of Battlesh
 We encourage contributions to BattleshipBuilder! Please read our Contribution Guidelines for more details.
 License
 
-[Link to BattleShipBuilder Repository](https://github.com/ShidWit/BattleShipBuilder/edit/main/CONTRIBUTING.md)
+[Link to Contrubing.md file](https://github.com/ShidWit/BattleShipBuilder/edit/main/CONTRIBUTING.md)
 
 BattleshipBuilder is licensed under the MIT License. Please review the license before using or contributing to the project.
 
-[Link to BattleShipBuilder Repository](https://github.com/ShidWit/BattleShipBuilder/blob/main/LICENSE)
+[Link to License file](https://github.com/ShidWit/BattleShipBuilder/blob/main/LICENSE)
 
 ### Getting Started
 
