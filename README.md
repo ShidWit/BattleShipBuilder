@@ -42,10 +42,6 @@ We're excited about the upcoming features that will shape the future of Battlesh
   - Expand ship components to include a variety of weapons, engines, and defensive systems.
   - Implement a power management system for more strategic ship designs.
 
-### Contributing
-
-We encourage contributions from the community. Feel free to fork the repository, make your changes, and submit a pull request. Refer to our [Contribution Guidelines](CONTRIBUTING.md) for details.
-
 ### Getting Started
 
 1. Clone the repository:
