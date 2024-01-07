@@ -38,10 +38,6 @@ If you find any bugs or would like to contribute code improvements:
 
 7. Open a pull request (PR) to the `main` branch of the original repository. Provide a clear description of your changes.
 
-## Code of Conduct
-
-This project follows our [Code of Conduct](CODE_OF_CONDUCT.md). Please make sure to review and adhere to it in all your interactions with the project.
-
 ## Additional Information
 
 - This project is licensed under the MIT License. You are free to fork and modify the code as you see fit.
