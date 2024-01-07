@@ -1,18 +1,28 @@
-extends Area
+extends Area3D
 
-var buoyancy_strength = 10.0  # Adjust as needed
-var dampening_factor = 0.3    # To counteract the bouncing
+# Strength of the buoyancy force (adjust as needed)
+var buoyancy_strength = 10.0
+# Dampening factor to counteract bouncing
+var dampening_factor = 0.3
 
 func _ready():
+	# Enable monitoring for the area
 	set_monitoring(true)
 	set_monitorable(false)
 
 func _physics_process(_delta):
+	# Get a list of bodies overlapping with the area
 	var bodies = get_overlapping_bodies()
+	# Apply buoyancy force to overlapping RigidBody3D bodies
 	for body in bodies:
-		if body is RigidBody:
+		if body is RigidBody3D:
+			# Calculate the depth of submersion
 			var depth = global_transform.origin.y - body.global_transform.origin.y
+			# Check if the body is submerged
 			if depth > 0:
-				var submerged_volume = min(depth, 1.0)  # Assuming a simple case
+				# Calculate the submerged volume (assuming a simple case)
+				var submerged_volume = min(depth, 1.0)
+				# Calculate buoyancy force
 				var force = Vector3(0, buoyancy_strength * submerged_volume, 0) - body.linear_velocity * dampening_factor
+				# Apply the buoyancy force as a central impulse to the body
 				body.apply_central_impulse(force)

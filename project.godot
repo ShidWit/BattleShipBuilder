@@ -6,13 +6,15 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
+config_version=5
 
 [application]
 
 config/name="Battle Ship Builder"
+config/version="0.0.01"
 run/main_scene="res://Scenes/MainScene.tscn"
-config/icon="res://icon.png"
+config/features=PackedStringArray("4.2")
+config/icon="res://Textures/icon.png"
 
 [gui]
 
@@ -24,4 +26,4 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
-environment/default_environment="res://default_env.tres"
+environment/defaults/default_environment="res://default_env.tres"
