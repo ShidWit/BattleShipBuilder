@@ -2,6 +2,10 @@
 
 Welcome to BattleshipBuilder, an open-source naval game where you design, build, and battle your custom warships.
 
+[Example of WarshipCraft Gameplay (Not this game but the original game)](https://www.youtube.com/watch?v=RAr3sP6g138)
+[Example of BattleshipCraft Gameplay (Not this game but the original game)](https://www.youtube.com/watch?v=NuSnM1jPTEU)
+
+
 ## Current Features
 
 - **Floating Cube Prototype:**
