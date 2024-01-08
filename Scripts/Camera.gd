@@ -9,9 +9,9 @@ var zoom_speed = 0.5
 # Speed of orbiting around the target
 var orbit_speed = 0.005
 # Minimum pitch angle to prevent flipping
-var min_pitch = 0.05
+var min_pitch = -1.2
 # Maximum pitch angle to prevent flipping
-var max_pitch = 1.0
+var max_pitch = 1.2
 # Flag indicating whether the camera is currently orbiting
 var orbiting = false
 # Last mouse position for calculating mouse delta

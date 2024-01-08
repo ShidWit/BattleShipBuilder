@@ -1,7 +1,7 @@
 extends Area3D
 
 # Strength of the buoyancy force (adjust as needed)
-var buoyancy_strength = 10.0
+var buoyancy_strength = 5.0
 # Dampening factor to counteract bouncing
 var dampening_factor = 0.3
 

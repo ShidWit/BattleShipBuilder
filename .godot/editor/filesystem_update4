@@ -2,3 +2,4 @@ res://default_env.tres
 res://Scenes/Block.tscn
 res://Scenes/Water.tscn
 res://Scenes/MainScene.tscn
+res://Scripts/WaterArea.gd
