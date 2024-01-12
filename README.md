@@ -3,6 +3,7 @@
 Welcome to BattleshipBuilder, an open-source naval game where you design, build, and battle your custom warships.
 
 - **Video Examples:**
+
   - [Example of WarshipCraft Gameplay (Not this game but the original game)](https://www.youtube.com/watch?v=RAr3sP6g138)
   - [Example of BattleshipCraft Gameplay (Not this game but the original game)](https://www.youtube.com/watch?v=NuSnM1jPTEU)
 
@@ -10,7 +11,7 @@ Welcome to BattleshipBuilder, an open-source naval game where you design, build,
 ## Current Features
 
 - **Floating Cube Prototype:**
-  - Explore the foundation with a basic floating cube in water.
+  - Explore the foundation with a basic floating cubes in water.
   - Control the camera to view your ship from different angles.
 
 ## Roadmap
@@ -18,6 +19,9 @@ Welcome to BattleshipBuilder, an open-source naval game where you design, build,
 We're excited about the upcoming features that will shape the future of BattleshipBuilder. Contributions are welcomed from developers, designers, and enthusiasts!
 
 ### Immediate Goals
+
+- **Water Shader:**
+  - Create a simple water shader with ripple effects.
 
 - **Ship Editor:**
   - Develop an intuitive ship editor for players to design and customize their warships.

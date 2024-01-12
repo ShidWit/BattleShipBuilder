@@ -1,5 +1,7 @@
 CollisionShape3D
+MeshInstance3D
+StaticBody3D
+RigidBody3D
 Area3D
 DirectionalLight3D
-MeshInstance3D
 WorldEnvironment

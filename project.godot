@@ -12,9 +12,9 @@ config_version=5
 
 config/name="Battle Ship Builder"
 config/version="0.0.01"
-run/main_scene="res://Scenes/MainScene.tscn"
+run/main_scene="res://scenes/world/level/TestScene.tscn"
 config/features=PackedStringArray("4.2")
-config/icon="res://Textures/icon.png"
+config/icon="res://assets/textures/icon.png"
 
 [gui]
 
@@ -23,7 +23,3 @@ common/drop_mouse_on_gui_input_disabled=true
 [physics]
 
 common/enable_pause_aware_picking=true
-
-[rendering]
-
-environment/defaults/default_environment="res://default_env.tres"
