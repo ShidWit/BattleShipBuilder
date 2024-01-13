@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://dxuxceuyvu2s6"]
+
+[ext_resource type="PackedScene" uid="uid://covgcn0xu46sa" path="res://scenes/world/Water.tscn" id="1_00g14"]
+[ext_resource type="Script" path="res://scripts/Camera.gd" id="2_yyj3u"]
+[ext_resource type="PackedScene" uid="uid://rk6pkg4qk37b" path="res://scenes/placeables/Block.tscn" id="3_p8m06"]
+[ext_resource type="PackedScene" uid="uid://dgku8jt4rb3aj" path="res://scenes/world/Sand.tscn" id="4_3o6e4"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1jarp"]
+sky_top_color = Color(0.529412, 0.807843, 0.921569, 1)
+sky_horizon_color = Color(0.878431, 0.721569, 0.694118, 1)
+ground_bottom_color = Color(0.00784314, 0.294118, 0.52549, 1)
+ground_horizon_color = Color(0.00784314, 0.294118, 0.52549, 1)
+
+[sub_resource type="Sky" id="Sky_1dqkq"]
+sky_material = SubResource("ProceduralSkyMaterial_1jarp")
+
+[sub_resource type="Environment" id="Environment_u0r7l"]
+background_mode = 2
+sky = SubResource("Sky_1dqkq")
+
+[node name="MainScene" type="Node3D"]
+
+[node name="Water" parent="." instance=ExtResource("1_00g14")]
+
+[node name="Sand" parent="." instance=ExtResource("4_3o6e4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -20, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008, 10.6271, 6.706)
+script = ExtResource("2_yyj3u")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_u0r7l")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.84103, -0.454594, 0.29328, 0, 0.542119, 0.840302, -0.540989, -0.706719, 0.455938, 0, 19.0891, 0)
+shadow_enabled = true
+
+[node name="Block" parent="." instance=ExtResource("3_p8m06")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
+
+[node name="Block2" parent="." instance=ExtResource("3_p8m06")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15, 0)
+
+[node name="Block3" parent="." instance=ExtResource("3_p8m06")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 20, 0.2)

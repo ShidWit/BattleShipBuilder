@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Battle Ship Builder"
 config/version="0.0.01"
-run/main_scene="res://scenes/world/level/TestScene.tscn"
+run/main_scene="res://scenes/world/TestScene.tscn"
 config/features=PackedStringArray("4.2")
 config/icon="res://assets/textures/icon.png"
 
