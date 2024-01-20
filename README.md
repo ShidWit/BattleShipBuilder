@@ -23,6 +23,9 @@ We're excited about the upcoming features that will shape the future of Battlesh
 - **Water Shader:**
   - Create a simple water shader with ripple effects.
 
+- **Sky Shader:**
+  - Create or import a simple sky shader. Good for Day, Night, Sunrise/Sunset. That can be set and will stay.
+
 - **Ship Editor:**
   - Develop an intuitive ship editor for players to design and customize their warships.
   - Implement the ability to add, rotate, and connect ship components.
