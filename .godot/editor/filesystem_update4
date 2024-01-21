@@ -1,2 +1,3 @@
-res://scenes/world/level/added/Water.tscn
-res://scenes/world/level/TestScene.tscn
+res://scripts/Camera.gd
+res://scripts/WaterArea.gd
+res://scenes/world/TestScene.tscn
