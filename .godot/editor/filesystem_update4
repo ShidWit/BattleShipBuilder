@@ -1,3 +1,12 @@
+<<<<<<< Updated upstream
 res://scripts/Camera.gd
 res://scripts/WaterArea.gd
 res://scenes/world/TestScene.tscn
+=======
+res://README.md
+res://CONTRIBUTING.md
+res://LICENSE.md
+res://scenes/world/TestScene.tscn
+res://scripts/Camera.gd
+res://scripts/WaterArea.gd
+>>>>>>> Stashed changes

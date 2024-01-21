@@ -2,23 +2,21 @@
 
 Welcome to BattleshipBuilder, an open-source naval game where you design, build, and battle your custom warships.
 
-- **Video Examples:**
-
-  - [Example of WarshipCraft Gameplay (Not this game but the original game)](https://www.youtube.com/watch?v=RAr3sP6g138)
-  - [Example of BattleshipCraft Gameplay (Not this game but the original game)](https://www.youtube.com/watch?v=NuSnM1jPTEU)
-
+**Video Examples:**
+- [Example of WarshipCraft Gameplay (Not this game but the original game)](https://www.youtube.com/watch?v=RAr3sP6g138)
+- [Example of BattleshipCraft Gameplay (Not this game but the original game)](https://www.youtube.com/watch?v=NuSnM1jPTEU)
 
 ## Current Features
-
 - **Floating Cube Prototype:**
-  - Explore the foundation with a basic floating cubes in water.
+  - Explore the foundation with basic floating cubes in water.
   - Control the camera to view your ship from different angles.
 
 ## Roadmap
 
 We're excited about the upcoming features that will shape the future of BattleshipBuilder. Contributions are welcomed from developers, designers, and enthusiasts!
 
-### Immediate Goals
+<details>
+<summary>**Immediate Goals**</summary>
 
 - **Water Shader:**
   - Create a simple water shader with ripple effects.
@@ -33,8 +31,10 @@ We're excited about the upcoming features that will shape the future of Battlesh
 - **Money and Shop System:**
   - Introduce an in-game currency system.
   - Create a shop where players can purchase ship components and upgrades.
+</details>
 
-### Near-Term Objectives
+<details>
+<summary>**Near-Term Objectives**</summary>
 
 - **AI Opponents:**
   - Implement artificial intelligence for enemy ships.
@@ -43,8 +43,10 @@ We're excited about the upcoming features that will shape the future of Battlesh
 - **Levels and Missions:**
   - Introduce a level system with progressively challenging missions.
   - Define objectives such as escort missions, naval battles, and exploration tasks.
+</details>
 
-### Long-Term Vision
+<details>
+<summary>**Long-Term Vision**</summary>
 
 - **Multiplayer Support:**
   - Plan and implement multiplayer functionality for engaging player vs. player battles.
@@ -53,19 +55,15 @@ We're excited about the upcoming features that will shape the future of Battlesh
 - **Advanced Ship Systems:**
   - Expand ship components to include a variety of weapons, engines, and defensive systems.
   - Implement a power management system for more strategic ship designs.
+</details>
 
-### Contributing
+## Contributing
 
-We encourage contributions to BattleshipBuilder! Please read our Contribution Guidelines for more details.
-License
+We encourage contributions to BattleshipBuilder! Please read our [Contribution Guidelines](https://github.com/ShidWit/BattleShipBuilder/blob/main/CONTRIBUTING.md) for more details.
 
-[Link to Contrubing.md file](https://github.com/ShidWit/BattleShipBuilder/blob/main/CONTRIBUTING.md)
+BattleshipBuilder is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. Please review the license before using or contributing to the project. [License Details](https://github.com/ShidWit/BattleShipBuilder/blob/main/LICENSE)
 
-BattleshipBuilder is licensed under the MIT License. Please review the license before using or contributing to the project.
-
-[Link to License file](https://github.com/ShidWit/BattleShipBuilder/blob/main/LICENSE)
-
-### Getting Started
+## Getting Started
 
 1. Clone the repository:
    ```bash

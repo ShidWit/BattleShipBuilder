@@ -1,8 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
+<<<<<<< Updated upstream
 ::res://::1705864420
 BattleshipClipart.jpg::CompressedTexture2D::4650937532959836112::1705864184::1705864184::1::::<><>::
 CONTRIBUTING.md::TextFile::-1::1704678052::0::1::::<><>::
 README.md::TextFile::-1::1705864000::0::1::::<><>::
+=======
+::res://::1705866565
+CONTRIBUTING.md::TextFile::-1::1705866415::0::1::::<><>::
+LICENSE.md::TextFile::-1::1705866454::0::1::::<><>::
+README.md::TextFile::-1::1705866406::0::1::::<><>::
+>>>>>>> Stashed changes
 ::res://assets/::1705110347
 ::res://assets/textures/::1705110347
 BattleshipClipart.jpg::CompressedTexture2D::768770987958663205::1705110347::1705110347::1::::<><>::
@@ -12,10 +19,16 @@ icon.png::CompressedTexture2D::4737899190495536880::1705110347::1705110347::1:::
 ::res://scenes/::1705110347
 ::res://scenes/placeables/::1705110492
 Block.tscn::PackedScene::1215763668913245217::1705110347::0::1::::<><>::
+<<<<<<< Updated upstream
 ::res://scenes/world/::1705537853
 Sand.tscn::PackedScene::7602312664904137969::1705110347::0::1::::<><>::
 TestScene.tscn::PackedScene::8816293314365502047::1705537853::0::1::::<><>::uid://covgcn0xu46sa::::res://scenes/world/Water.tscn<>res://scripts/Camera.gd<>uid://rk6pkg4qk37b::::res://scenes/placeables/Block.tscn<>uid://dgku8jt4rb3aj::::res://scenes/world/Sand.tscn
+=======
+::res://scenes/world/::1705866417
+Sand.tscn::PackedScene::7602312664904137969::1705110347::0::1::::<><>::
+TestScene.tscn::PackedScene::8816293314365502047::1705866417::0::1::::<><>::uid://covgcn0xu46sa::::res://scenes/world/Water.tscn<>res://scripts/Camera.gd<>uid://rk6pkg4qk37b::::res://scenes/placeables/Block.tscn<>uid://dgku8jt4rb3aj::::res://scenes/world/Sand.tscn
+>>>>>>> Stashed changes
 Water.tscn::PackedScene::5799205707194899368::1705110347::0::1::::<><>::res://scripts/WaterArea.gd
-::res://scripts/::1705110347
-Camera.gd::GDScript::-1::1705110347::0::1::::<>Camera3D<>::
-WaterArea.gd::GDScript::-1::1705110347::0::1::::<>Area3D<>::
+::res://scripts/::1705866415
+Camera.gd::GDScript::-1::1705866415::0::1::::<>Camera3D<>::
+WaterArea.gd::GDScript::-1::1705866406::0::1::::<>Area3D<>::
