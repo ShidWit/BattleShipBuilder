@@ -1,7 +1,8 @@
-# This code is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
-# To view a copy of this license, visit https://creativecommons.org/licenses/by-nc/4.0/legalcode
+# This code is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+# To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 # or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 # See the full text of the license for the specific terms and conditions.
+
 
 extends Camera3D
 

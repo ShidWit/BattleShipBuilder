@@ -16,7 +16,7 @@ If you find any bugs or would like to contribute code improvements:
 
 ## Additional Information
 
-- This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. You are free to fork and modify the code for non-commercial purposes, as long as you provide proper attribution.
+- This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. You are free to fork and modify the code for non-commercial purposes, as long as you provide proper attribution and share any derivative work under the same license.
 
 Thank you for your contributions!
 
