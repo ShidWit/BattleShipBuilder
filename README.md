@@ -61,7 +61,7 @@ We're excited about the upcoming features that will shape the future of Battlesh
 
 We encourage contributions to BattleshipBuilder! Please read our [Contribution Guidelines](https://github.com/ShidWit/BattleShipBuilder/blob/main/CONTRIBUTING.md) for more details.
 
-BattleshipBuilder is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. Please review the license before using or contributing to the project. [License Details](https://github.com/ShidWit/BattleShipBuilder/blob/main/LICENSE)
+BattleshipBuilder is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. Please review the license before using or contributing to the project. [License Details](https://github.com/ShidWit/BattleShipBuilder/blob/main/LICENSE.md)
 
 ## Getting Started
 
