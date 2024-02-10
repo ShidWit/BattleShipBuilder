@@ -12,13 +12,23 @@ config_version=5
 
 config/name="Battle Ship Builder"
 config/version="0.0.01"
-run/main_scene="res://scenes/world/TestScene.tscn"
+run/main_scene="res://scenes/TestScene.tscn"
 config/features=PackedStringArray("4.2")
 config/icon="res://assets/textures/icon.png"
 
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+
+[input]
+
+ui_down={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194322,"physical_keycode":0,"key_label":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":0,"axis":1,"axis_value":1.0,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":12,"pressure":0.0,"pressed":false,"script":null)
+]
+}
 
 [physics]
 

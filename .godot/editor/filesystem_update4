@@ -1,2 +1,2 @@
-res://README.md
-res://LICENSE.md
+res://scenes/TestScene.tscn
+res://scripts/Camera.gd

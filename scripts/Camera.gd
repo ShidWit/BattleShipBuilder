@@ -1,70 +1,67 @@
-# This code is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
-# To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
-# or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
-# See the full text of the license for the specific terms and conditions.
-
+# Licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International.
+# Full license: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+# Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 extends Camera3D
 
-# Target node that the camera will orbit around
-var target: Node
-# Initial distance from the target
-var distance_to_target = 10.0
-# Speed of zooming in and out
-var zoom_speed = 0.5
-# Speed of orbiting around the target
-var orbit_speed = 0.005
-# Minimum pitch angle to prevent flipping
-var min_pitch = -1.2
-# Maximum pitch angle to prevent flipping
-var max_pitch = 1.2
-# Flag indicating whether the camera is currently orbiting
-var orbiting = false
-# Last mouse position for calculating mouse delta
-var last_mouse_position = Vector2()
-# Current pitch angle of the camera
-var current_pitch = 0.0
-# Current yaw angle of the camera
-var current_yaw = 0.0
+# Configuration
+var target: Node  # The target node for the camera to orbit around.
+var distance_to_target = 10.0  # Initial distance from the target.
+var zoom_speed = 0.5  # Speed of zooming in and out.
+var orbit_speed = 0.005  # Speed of orbiting around the target.
+var min_pitch = -0.1  # Minimum pitch angle to prevent camera flipping.
+var max_pitch = 1.0  # Maximum pitch angle to prevent camera flipping.
+var orbiting = false  # Tracks if the camera is currently orbiting.
+var last_mouse_position = Vector2()  # Tracks the last mouse position for delta calculation.
+var current_pitch = 0.0  # Current pitch angle of the camera.
+var current_yaw = 0.0  # Current yaw angle of the camera.
 
 func _ready():
-	# Set the initial target node (adjust the path accordingly)
-	target = get_node("/root/MainScene/Block")
-	# Set the initial mouse mode
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	# Initialize the camera's target and mouse mode.
+	target = get_node("/root/MainScene/Block")  # Adjust the node path as necessary.
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)  # Hide the mouse cursor at start.
 
 func _input(event):
-	# Handle mouse button events
+	# Process input events to handle camera controls.
 	if event is InputEventMouseButton:
-		# Right mouse button starts/stops orbiting
-		if event.button_index == MOUSE_BUTTON_RIGHT:
-			orbiting = event.pressed
-			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED if orbiting else Input.MOUSE_MODE_HIDDEN)
-			last_mouse_position = event.position
-
-		# Zoom in with the mouse wheel up
-		elif event.button_index == MOUSE_BUTTON_WHEEL_UP:
-			distance_to_target = max(distance_to_target - zoom_speed, 1.0)
-
-		# Zoom out with the mouse wheel down
-		elif event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
-			distance_to_target += zoom_speed
-
-	# Handle mouse motion events during orbiting
+		handle_mouse_button_events(event)
 	elif event is InputEventMouseMotion and orbiting:
-		var mouse_delta = event.relative
-		update_camera_orbit(-mouse_delta)  # Invert the mouse_delta here
+		handle_mouse_motion_events(event)
 
-func update_camera_orbit(mouse_delta):
-	# Update the camera's yaw and pitch angles based on mouse movement
-	current_yaw += mouse_delta.x * orbit_speed
-	current_pitch -= mouse_delta.y * orbit_speed  # Invert the sign for up and down movement
-	current_pitch = clamp(current_pitch, min_pitch, max_pitch)
+func handle_mouse_button_events(event: InputEventMouseButton):
+	# Handles mouse button inputs for orbiting and zooming.
+	if event.button_index == MOUSE_BUTTON_RIGHT:
+		# Toggle orbiting state and mouse mode on right click.
+		orbiting = event.pressed
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED if orbiting else Input.MOUSE_MODE_HIDDEN)
+		last_mouse_position = event.position
+	elif event.button_index == MOUSE_BUTTON_WHEEL_UP:
+		# Zoom in with mouse wheel up.
+		distance_to_target = max(distance_to_target - zoom_speed, 1.0)
+	elif event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
+		# Zoom out with mouse wheel down.
+		distance_to_target += zoom_speed
+
+func handle_mouse_motion_events(event: InputEventMouseMotion):
+	# Update camera orbit based on mouse movement.
+	var mouse_delta = event.relative
+	update_camera_orbit(-mouse_delta.x, -mouse_delta.y)  # Pass inverted deltas for intuitive control.
+
+func update_camera_orbit(delta_x: float, delta_y: float):
+	# Updates the camera's orbit around the target based on mouse movement.
+	# Remove the inversion for delta_x to maintain original left/right control direction.
+	current_yaw += delta_x * orbit_speed  # Keep the side-to-side direction as originally intended
+	current_pitch += delta_y * orbit_speed  # Up and down remains unchanged
+	current_pitch = clamp(current_pitch, min_pitch, max_pitch)  # Prevent flipping.
 
 func _process(_delta):
-	# Update the camera position and orientation
+	# Continuously update the camera's position and orientation to orbit around the target.
 	if target:
-		var target_pos = target.global_transform.origin
-		var rotated_offset = Vector3(cos(current_pitch) * sin(current_yaw), sin(current_pitch), cos(current_pitch) * cos(current_yaw)) * distance_to_target
-		global_transform.origin = target_pos + rotated_offset
-		look_at(target_pos, Vector3.UP)
+		update_camera_position()
+
+func update_camera_position():
+	# Calculate and apply the camera's position based on its orbit around the target.
+	var target_pos = target.global_transform.origin
+	var rotated_offset = Vector3(cos(current_pitch) * sin(current_yaw), sin(current_pitch), cos(current_pitch) * cos(current_yaw)) * distance_to_target
+	global_transform.origin = target_pos + rotated_offset
+	look_at(target_pos, Vector3.UP)  # Orient the camera to look at the target.

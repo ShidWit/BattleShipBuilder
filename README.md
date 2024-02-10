@@ -1,4 +1,8 @@
-# BattleshipBuilder
+# BattleshipBuilder Update
+
+**Important Update:** At this current moment, I've realized that I do not possess the necessary skills to create BattleshipBuilder as envisioned. Over the next few months, I plan to dedicate my time to learning more about the Godot Engine and engaging in other projects to build up my expertise. I am not ready to take on this project yet, but I am committed to preparing myself to bring BattleshipBuilder to life in the future. Thank you for your understanding and support.
+
+---
 
 Welcome to BattleshipBuilder, an open-source naval game where you design, build, and battle your custom warships.
 
